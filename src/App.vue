@@ -1,20 +1,26 @@
-<script setup lang="ts">
-import Square from './components/Square.vue';
-</script>
-
 <template>
-  <section class="container">
-    <Square/>
-  </section>
+  <div class="container">
+    <Square />
+  </div>
 </template>
+
+<script>
+import Square from './components/Square.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Square
+  }
+}
+</script>
 
 <style scoped lang="scss">
 .container {
-  display: flex;
+  background-color: white;
+  margin: 0;
+  padding: 0;
   height: 100vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
+  position: relative;
 }
 </style>

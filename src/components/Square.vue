@@ -1,15 +1,21 @@
 <template>
-    <div class="container">
-        <div class="square">
-
-        </div>
-    </div>
+  <div class="square"></div>
 </template>
+
+<script>
+export default {
+  name: 'Square'
+}
+</script>
 
 <style scoped lang="scss">
 .square {
-    height: 200px;
-    width: 200px;
-    color: black;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>
